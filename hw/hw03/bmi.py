@@ -24,8 +24,6 @@ def cov(x:np.ndarray, y:np.ndarray):
     ybar = mean(y)
     return mean(dev(x)*dev(y))
 
-
-
 # correlation
 def cor(x:np.ndarray, y:np.ndarray):
     return cov(x, y) / (std(x) * std(y))
