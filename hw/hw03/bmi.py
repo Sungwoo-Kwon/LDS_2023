@@ -1,6 +1,7 @@
 # Linguistics and Data Science [hw03]
 # Release date: 2023-09-20 
 # Due date: 2023-09-22 1:00 PM
+# 권성우(Sungwoo Kwon) : 2023-82030
 
 import numpy as np
 
