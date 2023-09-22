@@ -16,14 +16,11 @@ def dev(x:np.ndarray):
 
 # standard deviation
 def std(x:np.ndarray):
-    xbar = mean(x)
-    return (sum((x-xbar) ** 2) / len(x)) ** (1/2)
+    return (mean((dev(x)) ** 2)) ** (1/2)
 
 # covariance
 def cov(x:np.ndarray, y:np.ndarray):
-    xbar = mean(x)
-    ybar = mean(y)
-    return mean(dev(x)*dev(y))
+    return mean(dev(x) * dev(y))
 
 # correlation
 def cor(x:np.ndarray, y:np.ndarray):
@@ -48,7 +45,7 @@ weight = [
 ]
 weight = np.array(weight)
 
-print('correlation between height and weight:', cor(height, weight)) # [Q4] Write the result : 0.5709208208072761
+print('correlation between height and weight:', cor(height, weight)) # [Q4] Write the result : correlation between height and weight: 0.5709208208072761
 
 # convert inch to (centi)meter
 height = height * 2.54
@@ -59,4 +56,4 @@ weight = weight * 0.453592
 # calculate BMI (Body mass index)
 bmi = np.array(weight/height ** 2) # EDIT THIS LINE
 
-print('who has the lowest BMI:', bmi.argmin()) # [Q5] Write the result : the person at 8th index with a bmi of 0.0243731
+print('who has the lowest BMI:', bmi.argmin()) # [Q5] Write the result : who has the lowest BMI: 8 (the person pointed by index 8 with a bmi of 0.0017136)
