@@ -1,0 +1,5 @@
+14 answers: legacy materials and new recordings collected specifically for the public corpus.
+
+36 : 1. word error rate, 2. Deletion, Insertion, Substitution
+
+41 : Tweet IDs, Direct Message IDs, and/of User IDs
